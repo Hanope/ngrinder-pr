@@ -13,7 +13,7 @@ public class HelloController {
 
     @GetMapping("/slow")
     public String helloSlow() throws InterruptedException {
-        Thread.sleep(5000);
+        Thread.sleep(2000);
         return "slow";
     }
 }
